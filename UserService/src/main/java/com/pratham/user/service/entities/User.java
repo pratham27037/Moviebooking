@@ -1,10 +1,7 @@
 package com.pratham.user.service.entities;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
@@ -21,6 +18,10 @@ public class User {
     private String name;
     @Column(name = "Email")
     private String email;
-    @Column(name = "About")
-    private String about;
+    @Column(name = "Mobile-number")
+    private int number;
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
 }
