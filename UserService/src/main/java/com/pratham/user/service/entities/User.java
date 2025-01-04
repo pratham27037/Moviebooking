@@ -18,10 +18,6 @@ public class User {
     private String name;
     @Column(name = "Email")
     private String email;
-    @Column(name = "Mobile-number")
+    @Column(name = "Mobile_number")
     private int number;
-
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
 }
